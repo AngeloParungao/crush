@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Angel</title>
+    <style>
+        *{
+            margin: 0;
+        }
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100svh;
+            background-color: rgb(250, 150, 167);
+        }
+        a{
+            text-align: center;
+            animation: float 2s infinite;
+        }
+
+        @keyframes float {
+            0%{
+                transform: translateY(0px);
+                 filter: drop-shadow(10px 60px 20px #444040);
+            }
+            50%{
+                transform: translateY(20px);
+                filter: drop-shadow(10px 30px 5px #252525);
+            }
+            100%{
+                transform: translateY(0px);
+                 filter: drop-shadow(10px 60px 20px #444040);
+            }
+            
+        }
+    </style>
+</head>
+<body>
+    <a href="start.html"><img src="envelope.png" alt="" height="50%" width="50%"></a>
+</body>
+</html>
