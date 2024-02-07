@@ -290,4 +290,149 @@ h3{
 }
 
 
+.rose{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20%;
+    height: 100%;
+    width: 100%;
+    z-index: -100;
+  }
+
+.rose .rose-petals {
+    margin-top: 10%;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+}
+
+.rose .rose-petals #group-1,
+.rose .rose-petals #group-2,
+.rose .rose-petals #group-3{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+    width:90px;
+    height: 80px;
+    transition: all 0.5s ease-out;
+}
+
+.rose .rose-petals div {
+    width: 45px;
+    height: 80px;
+    transition: all 0.5s ease-out;
+  }
+  .rose .rose-petals > div:nth-child(1) {
+    position: absolute;
+    border-radius: 15px;
+    background: #d52d58;
+  }
+  .rose .rose-petals #group-1> div:nth-child(1), .container .rose-petals #group-2> div:nth-child(1), .rose .rose-petals #group-3> div:nth-child(1) {
+    border-radius: 0px 30px 0px 30px;
+    background: #b81b43;
+    left: 0;
+    transform-origin: bottom right;
+  }
+  .rose .rose-petals #group-1> div:nth-child(2), .container .rose-petals #group-2> div:nth-child(2), .rose .rose-petals #group-3> div:nth-child(2) {
+    border-radius: 30px 0px 30px 0px;
+    transform-origin: bottom left;
+  }
+  .rose .rose-petals #group-1> div:nth-child(1) {
+    animation: openRose2 3s ease-in-out;
+    animation-fill-mode: forwards;
+    z-index: 5;
+    background: #9e183a;
+    height: 70px;
+    animation-delay: 2s;
+  }
+  .rose .rose-petals #group-1> div:nth-child(2) {
+    animation: openRose3 3s ease-in-out;
+    animation-fill-mode: forwards;
+    z-index: 4;
+    background: #9e183a;
+    height: 70px;
+    animation-delay: 2s;
+  }
+  .rose .rose-petals #group-2> div:nth-child(1) {
+    animation: openRose4 3s ease-in-out;
+    animation-fill-mode: forwards;
+    z-index: 3;
+    background: #b81b43;
+
+    height: 75px;
+    animation-delay: 2s;
+  }
+  .rose .rose-petals #group-2> div:nth-child(2) {
+    animation: openRose5 3s ease-in-out;
+    animation-fill-mode: forwards;
+    z-index: 2;
+    background: #b81b43;
+    height: 75px;
+    animation-delay: 2s;
+  }
+  .rose .rose-petals #group-3> div:nth-child(1) {
+    animation: openRose6 3s ease-in-out;
+    animation-fill-mode: forwards;
+    z-index: 1;
+    background: #c9204b;
+    animation-delay: 2s;
+  }
+  .rose .rose-petals #group-3> div:nth-child(2) {
+    animation: openRose7 3s ease-in-out;
+    animation-fill-mode: forwards;
+    z-index: 0;
+    background: #c9204b;
+    animation-delay: 2s;
+  }
+
+  .rose .rose-leaves{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    height: 100%;
+    top: 20%
+  }
+  .rose .rose-leaves > div:nth-last-child(1) {
+    position: absolute;
+    width: 55px;
+    height: 30px;
+    background: #338f37;
+    border-radius: 100px;
+    z-index: -101;
+  }
+  .rose .rose-leaves > div:nth-child(1) {
+    position: absolute;
+    width: 6px;
+    height: 230px;
+    border: none;
+    background: #066406;
+    z-index: -101;
+  }
+  @keyframes openRose2 {
+    100% {
+        transform: rotate(-60deg);
+      }
+  }
+  @keyframes openRose3 {
+    100% {
+      transform: rotate(60deg);
+    }
+}
+  @keyframes openRose4 {
+    100% {
+      transform: rotate(-30deg);
+    }
+  }
+
+  @keyframes openRose5 {
+    100% {
+      transform: rotate(30deg);
+    }
+  }
 
