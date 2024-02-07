@@ -310,6 +310,12 @@ h3{
     width: 100%;
 }
 
+@media only screen and (max-width: 600px) {
+    .rose .rose-petals {
+        margin-top: 15%;
+    }
+  }
+
 .rose .rose-petals #group-1,
 .rose .rose-petals #group-2,
 .rose .rose-petals #group-3{
