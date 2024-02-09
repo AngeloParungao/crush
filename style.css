@@ -295,7 +295,7 @@ h3{
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 20%;
+    margin-top: 30%;
     height: 100%;
     width: 100%;
     z-index: -100;
@@ -309,7 +309,6 @@ h3{
     height: 100%;
     width: 100%;
 }
-
 @media only screen and (max-width: 600px) {
     .rose .rose-petals {
         margin-top: 15%;
@@ -352,6 +351,7 @@ h3{
   .rose .rose-petals #group-1> div:nth-child(1) {
     animation: openRose2 3s ease-in-out;
     animation-fill-mode: forwards;
+    animation-timeline: cover;
     z-index: 5;
     background: #9e183a;
     height: 70px;
